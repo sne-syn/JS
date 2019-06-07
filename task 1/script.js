@@ -21,18 +21,18 @@ let appData = {
 };
 
 let exp1 = prompt("Введите обязательную статью расходов в этом месяце", "");
-let exp2 = prompt("Введите обязательную статью расходов в этом месяце", "");
-let exp3 = prompt("Во сколько обойдется?", "");
+let exp2 = prompt("Во сколько обойдется?", "");
+let exp3 = prompt("Введите обязательную статью расходов в этом месяце", "");
 let exp4 = prompt("Во сколько обойдется?", "");
 
-let expenses = {};
-expenses.exp1 = exp3;
-expenses.exp3 = exp4;
+// // let expenses = {};
+// appData.expenses.exp1 = exp2;
+// appData.expenses.exp3 = exp4;
 
 
-// let expenses = {
-//     exp1: exp3,
-//     exp2: exp4
-// };
+appData.expenses = {
+    exp1: exp2,
+    exp3: exp4
+};
 
 alert(appData.budget/30);

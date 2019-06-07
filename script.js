@@ -52,3 +52,116 @@
 
 // console.log(user.name);
 
+// let num = 49;
+
+// if (num < 49) {
+//     console.log("Неверно");
+// } else if (num > 100) {
+//     console.log("Многовато!");
+// } else {
+//     console.log("Верно!");
+// }
+
+// let num = 50;
+
+
+var num = 50;
+
+switch (num) {
+    case 49:
+        console.log("you need more");
+        break;
+    case num > 100:
+        console.log("too much");
+        break;
+    case num > 80:
+        console.log("too much also");
+        break;
+    case 50:
+        console.log("i like it");
+        break;
+    default:
+        console.log("What's wrong?");
+        break;
+}
+
+
+var a = 5 + 5;
+
+// switch (a) {
+//     case 8:
+//       console.log("Try one more time!");
+//       break;
+//     case 12:
+//       console.log("Oh my God! Where did you get that number?");
+//       break;
+//     case 9:
+//       console.log("Good job, commander");
+//       break;
+//     default:
+//       console.log("Are you still here? Hello?");
+//       break;
+// }
+
+if (a <= 8) {
+    console.log("Try one more time!");
+} else if (a >= 10) {
+    console.log("Oh my God! Where did you get that number?");
+} else if (a == 9) {
+    console.log("Good job, commander");
+} else {
+    console.log("Are you still here? Hello?");
+}
+
+// https://learn.javascript.ru/switch 
+
+var browser = "blabla";
+
+if (browser == "IE") {
+    console.log("О, да у вас IE!");
+} else if (browser == "Chrome" || browser == "Firefox" || browser == "Opera" || browser == "Safari") {
+    console.log("Да, и эти браузеры мы поддерживаем");
+} else {
+    console.log('Мы надеемся, что и в вашем браузере все ок!');
+}
+
+// var a = +prompt("a?", "");
+
+// switch (a) {
+//   case 0:
+//     console.log(0);
+//     break;
+//   case 1:
+//     console.log(1);
+//     break;
+//   case 2:
+//   case 3:
+//     console.log("2, 3");
+//     break;
+//   default:
+//     console.log("Все идет по плану!");
+//     break;
+// }
+
+// ------
+
+//Циклы  
+
+let numm = 50;
+
+// while (numm < 55) {
+//     console.log(numm);
+//     numm++;
+// }
+
+do {
+    console.log(numm);
+    numm++;
+}
+while (numm < 55);
+
+// let button = 1;
+
+for (let button = 2 + 1; button < 508; button = button * 2) {
+    console.log(button);
+}
