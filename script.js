@@ -184,3 +184,13 @@ function retVar() {
 
 let anotherNum = retVar() * 2;
 console.log(anotherNum);
+
+let str = "test";
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+let result = "12.2px";
+console.log(Math.round(result)); // NaN
+console.log(parseInt(result));
+console.log(parseFloat(result));
