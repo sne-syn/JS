@@ -199,7 +199,7 @@
 // learn.javascript exercises function ()
 
 
-// call-back function type-1
+// call-back function 
 
 function writePoem(first, second) {
     console.log("Я вас любил" + first);
@@ -217,7 +217,36 @@ function third(line) {
 third(" еще быть может");
 
 function fourth(lastLine) {
-    console.log("Подумал, " + lastLine);
+    console.log("Загуглил, " + lastLine);
 }
 
 fourth(" вроде не баян");
+
+//
+
+function showMessage (greeting, smallTalk) {
+    var text = "Hello darkness";
+    alert(text + ", " + greeting);
+    smallTalk();
+}
+
+showMessage ("my old friend ", function () {
+    (alert("I've come to talk with you again"));
+});
+
+function singSong (line1, line2) {
+    if (line2 === undefined) {
+        line2 = "...";
+      }
+    console.log (line1 + " " + line2);
+}
+
+singSong ("Me has dejado sin luz en las noches tremendo dolor.",
+"Luna llena me siento tan sólo.");
+
+function singOneSong (line) {
+    var anaphora = "Luna llena"
+    console.log (anaphora + " " + line);
+}
+
+singOneSong ("ya no estas, Si está noche no vienes te juro que voy a llorar." );
