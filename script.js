@@ -154,14 +154,33 @@ let numm = 50;
 //     numm++;
 // }
 
-do {
-    console.log(numm);
-    numm++;
-}
-while (numm < 55);
+// do {
+//     console.log(numm);
+//     numm++;
+// }
+// while (numm < 55);
 
-// let button = 1;
+// // let button = 1;
 
-for (let button = 2 + 1; button < 508; button = button * 2) {
-    console.log(button);
+// for (let button = 2 + 1; button < 508; button = button * 2) {
+//     console.log(button);
+// }
+
+// JS course udemy: Function
+
+function calc(a,b) {
+  return (a + b);
 }
+
+console.log(calc(3,4));
+console.log(calc(5,4));
+console.log(calc(2,4));
+
+
+function retVar() {
+  let num = 50;
+  return num;
+}
+
+let anotherNum = retVar() * 2;
+console.log(anotherNum);
