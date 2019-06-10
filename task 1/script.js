@@ -79,6 +79,8 @@ let appData = {
   savings: true
 };
 
+// function-1: Expenses
+
 function chooseExpenses() {
   for (let i = 0; i < 2; i++) {
     let exp1 = prompt("Введите обязательную статью расходов в этом месяце", "");
@@ -96,6 +98,8 @@ function chooseExpenses() {
 
 chooseExpenses();
 
+// function-2: DayBudget
+
 function detectDayBudget() {
   appData.moneyPerDay = (appData.budget / 30).toFixed();
   alert("Ежедневный бюджет:" + appData.moneyPerDay + "rub.");
@@ -103,18 +107,23 @@ function detectDayBudget() {
 
 detectDayBudget();
 
-// appData.moneyPerDay = (appData.budget / 30).toFixed();
+// function-3: levelOfWealth
 
-
-if (appData.budget < 100) {
-  console.log("Минимальный уровень достатка!");
-} else if (appData.budget > 100 && appData.budget < 2000) {
-  console.log("Средний уровень достатка!");
-} else if (appData.budget > 2000) {
-  console.log("Высокий уровень достатка!");
-} else {
-  console.log("Хьюстон, у нас проблема");
+function detectLevel () {
+  if (appData.budget < 100) {
+    console.log("Минимальный уровень достатка!");
+  } else if (appData.budget > 100 && appData.budget < 2000) {
+    console.log("Средний уровень достатка!");
+  } else if (appData.budget > 2000) {
+    console.log("Высокий уровень достатка!");
+  } else {
+    console.log("Хьюстон, у нас проблема");
+  }
 }
+
+detectLevel();
+
+// function-4: checkSavings
 
 function checkSavings() {
   if (appData.savings == true) {
@@ -127,3 +136,14 @@ function checkSavings() {
 }
 
 checkSavings();
+
+// function-5: optionalExpenses 
+
+function chooseOptExpenses () {
+
+  for(var i = 1; i <= 3; i++) {
+    var questionOptExpenses = prompt("Статья необязательных расходов?", "");
+    appData.optionalExpenses[i] = questionOptExpenses;
+    console.log(appData.optionalExpenses);
+  }
+}
