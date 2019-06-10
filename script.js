@@ -65,28 +65,28 @@
 // let num = 50;
 
 
-var num = 50;
+// var num = 50;
 
-switch (num) {
-    case 49:
-        console.log("you need more");
-        break;
-    case num > 100:
-        console.log("too much");
-        break;
-    case num > 80:
-        console.log("too much also");
-        break;
-    case 50:
-        console.log("i like it");
-        break;
-    default:
-        console.log("What's wrong?");
-        break;
-}
+// switch (num) {
+//     case 49:
+//         console.log("you need more");
+//         break;
+//     case num > 100:
+//         console.log("too much");
+//         break;
+//     case num > 80:
+//         console.log("too much also");
+//         break;
+//     case 50:
+//         console.log("i like it");
+//         break;
+//     default:
+//         console.log("What's wrong?");
+//         break;
+// }
 
 
-var a = 5 + 5;
+// var a = 5 + 5;
 
 // switch (a) {
 //     case 8:
@@ -103,27 +103,27 @@ var a = 5 + 5;
 //       break;
 // }
 
-if (a <= 8) {
-    console.log("Try one more time!");
-} else if (a >= 10) {
-    console.log("Oh my God! Where did you get that number?");
-} else if (a == 9) {
-    console.log("Good job, commander");
-} else {
-    console.log("Are you still here? Hello?");
-}
+// if (a <= 8) {
+//     console.log("Try one more time!");
+// } else if (a >= 10) {
+//     console.log("Oh my God! Where did you get that number?");
+// } else if (a == 9) {
+//     console.log("Good job, commander");
+// } else {
+//     console.log("Are you still here? Hello?");
+// }
 
 // https://learn.javascript.ru/switch 
 
-var browser = "blabla";
+// var browser = "blabla";
 
-if (browser == "IE") {
-    console.log("О, да у вас IE!");
-} else if (browser == "Chrome" || browser == "Firefox" || browser == "Opera" || browser == "Safari") {
-    console.log("Да, и эти браузеры мы поддерживаем");
-} else {
-    console.log('Мы надеемся, что и в вашем браузере все ок!');
-}
+// if (browser == "IE") {
+//     console.log("О, да у вас IE!");
+// } else if (browser == "Chrome" || browser == "Firefox" || browser == "Opera" || browser == "Safari") {
+//     console.log("Да, и эти браузеры мы поддерживаем");
+// } else {
+//     console.log('Мы надеемся, что и в вашем браузере все ок!');
+// }
 
 // var a = +prompt("a?", "");
 
@@ -145,9 +145,9 @@ if (browser == "IE") {
 
 // ------
 
-//Циклы  
+// Циклы  
 
-let numm = 50;
+// let numm = 50;
 
 // while (numm < 55) {
 //     console.log(numm);
@@ -168,29 +168,56 @@ let numm = 50;
 
 // JS course udemy: Function
 
-function calc(a,b) {
-  return (a + b);
+// function calc(a,b) {
+//   return (a + b);
+// }
+
+// console.log(calc(3,4));
+// console.log(calc(5,4));
+// console.log(calc(2,4));
+
+
+// function retVar() {
+//   let num = 50;
+//   return num;
+// }
+
+// let anotherNum = retVar() * 2;
+// console.log(anotherNum);
+
+// let str = "test";
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let result = "12.2px";
+// console.log(Math.round(result)); // NaN
+// console.log(parseInt(result));
+// console.log(parseFloat(result));
+
+
+// learn.javascript exercises function ()
+
+
+// call-back function type-1
+
+function writePoem(first, second) {
+    console.log("Я вас любил" + first);
+    second();
 }
 
-console.log(calc(3,4));
-console.log(calc(5,4));
-console.log(calc(2,4));
+writePoem(", подумал Пушкин!", function () {
+    (console.log("Открыл блокнот, включил планшет"));
+});
 
-
-function retVar() {
-  let num = 50;
-  return num;
+function third(line) {
+    console.log("Любил, любовь" + line);
 }
 
-let anotherNum = retVar() * 2;
-console.log(anotherNum);
+third(" еще быть может");
 
-let str = "test";
-console.log(str.length);
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+function fourth(lastLine) {
+    console.log("Подумал, " + lastLine);
+}
 
-let result = "12.2px";
-console.log(Math.round(result)); // NaN
-console.log(parseInt(result));
-console.log(parseFloat(result));
+fourth(" вроде не баян");
