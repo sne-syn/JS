@@ -222,7 +222,7 @@ function fourth(lastLine) {
 
 fourth(" вроде не баян");
 
-//
+// showMessage - call-back function
 
 function showMessage (greeting, smallTalk) {
     var text = "Hello darkness";
@@ -233,6 +233,8 @@ function showMessage (greeting, smallTalk) {
 showMessage ("my old friend ", function () {
     (alert("I've come to talk with you again"));
 });
+
+// basic functions
 
 function singSong (line1, line2) {
     if (line2 === undefined) {
@@ -245,7 +247,7 @@ singSong ("Me has dejado sin luz en las noches tremendo dolor.",
 "Luna llena me siento tan sólo.");
 
 function singOneSong (line) {
-    var anaphora = "Luna llena"
+    var anaphora = "Luna llena";
     console.log (anaphora + " " + line);
 }
 
