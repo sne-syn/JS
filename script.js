@@ -201,54 +201,135 @@
 
 // call-back function 
 
-function writePoem(first, second) {
-    console.log("Я вас любил" + first);
-    second();
-}
+// function writePoem(first, second) {
+//     console.log("Я вас любил" + first);
+//     second();
+// }
 
-writePoem(", подумал Пушкин!", function () {
-    (console.log("Открыл блокнот, включил планшет"));
-});
+// writePoem(", подумал Пушкин!", function () {
+//     (console.log("Открыл блокнот, включил планшет"));
+// });
 
-function third(line) {
-    console.log("Любил, любовь" + line);
-}
+// function third(line) {
+//     console.log("Любил, любовь" + line);
+// }
 
-third(" еще быть может");
+// third(" еще быть может");
 
-function fourth(lastLine) {
-    console.log("Загуглил, " + lastLine);
-}
+// function fourth(lastLine) {
+//     console.log("Загуглил, " + lastLine);
+// }
 
-fourth(" вроде не баян");
+// fourth(" вроде не баян");
 
-// showMessage - call-back function
+// // showMessage - call-back function
 
-function showMessage (greeting, smallTalk) {
-    var text = "Hello darkness";
-    alert(text + ", " + greeting);
-    smallTalk();
-}
+// function showMessage (greeting, smallTalk) {
+//     var text = "Hello darkness";
+//     alert(text + ", " + greeting);
+//     smallTalk();
+// }
 
-showMessage ("my old friend ", function () {
-    (alert("I've come to talk with you again"));
-});
+// showMessage ("my old friend ", function () {
+//     (alert("I've come to talk with you again"));
+// });
 
-// basic functions
+// // basic functions
 
-function singSong (line1, line2) {
-    if (line2 === undefined) {
-        line2 = "...";
-      }
-    console.log (line1 + " " + line2);
-}
+// function singSong (line1, line2) {
+//     if (line2 === undefined) {
+//         line2 = "...";
+//       }
+//     console.log (line1 + " " + line2);
+// }
 
-singSong ("Me has dejado sin luz en las noches tremendo dolor.",
-"Luna llena me siento tan sólo.");
+// singSong ("Me has dejado sin luz en las noches tremendo dolor.",
+// "Luna llena me siento tan sólo.");
 
-function singOneSong (line) {
-    var anaphora = "Luna llena";
-    console.log (anaphora + " " + line);
-}
+// function singOneSong (line) {
+//     var anaphora = "Luna llena";
+//     console.log (anaphora + " " + line);
+// }
 
-singOneSong ("ya no estas, Si está noche no vienes te juro que voy a llorar." );
+// singOneSong ("ya no estas, Si está noche no vienes te juro que voy a llorar." );
+
+// 
+
+// function checkAge(age) {
+//     return (age > 18) || confirm('Родители разрешили?'); 
+//   }
+
+//   checkAge ();
+
+//   function min (a, b) {
+//       return a < b ? a : b;
+
+//     //   if (a<b) {
+//     //       console.log(a);
+//     //       return a;
+
+//     //   } else {
+//     //       console.log(b);
+//     //       return b;
+//     //   }
+//   }
+
+//   min (5, 4);
+
+// function pow() {
+
+//     var x = prompt("x?", "");
+//     var n = prompt("n?", "");
+//     if (n > 1) {
+//         alert(Math.pow(x, n));
+//     } else {
+//         alert("Степень " + n + " не поддерживается, введите целую степень, большую 1");
+//     }
+// }
+
+// pow();
+
+// Object udemy
+
+// var options = {
+//   width: 1024,
+//   height: 1024,
+//   name: "test"
+// };
+
+// console.log(options.name);
+// options.bool = false;
+// options.colors = {
+//     border: "black",
+//     background: "red"
+// };
+// delete options.bool;
+
+// console.log(options);
+
+// for (let key in options) {
+//     console.log("Свойство " + key +  " имеет значение " + options[key]);
+// }
+
+// console.log(Objects.keys(options).length);
+
+// Массив udemy
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.lenght; i++) {
+//   console.log(arr[i]);
+// }
+
+// arr.forEach(function(item, i, mass) {
+//     console.log(item * 2);
+// });
+
+// console.log(arr);
+
+//method split
+
+let ans = prompt("",""),
+    arr = [];
+
+    arr = ans.split(",");
