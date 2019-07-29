@@ -329,7 +329,42 @@
 
 //method split
 
-let ans = prompt("",""),
-    arr = [];
+// let ans = prompt("",""),
+//     arr = [];
 
-    arr = ans.split(",");
+//     arr = ans.split(",");
+
+// var a = 3;
+// var b = 17;
+// var c = 12;
+
+// // Only modify code below this line
+
+// a += 12;
+// b += 9;
+// c += " 7";
+
+// console.log(c);var firstLetterOfLastName = "";
+// var $name = "Patricia";
+// var letterOf$Name = $name[$name.length - 2];
+// console.log(letterOf$Name);
+
+// fCC Testing Objects for Properties
+
+/*
+var myDog = {
+    "name": "Tony",
+    "weight": "12kg",
+    "favorite toy": "cat"
+};
+
+function findInfo(dogsSecret) {
+  if (myDog.hasOwnProperty(dogsSecret)) {
+      console.log(myDog[dogsSecret]);
+  } else {
+      console.log("Not found");
+  }
+}
+
+findInfo("name");
+*/
